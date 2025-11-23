@@ -87,99 +87,30 @@ th,td{
 .year{color: #505050; font-size:0.67em; font-weight: lighter;}
 
 /* Navigation Links (Home, Registration, etc) */
-/*
 table.navigation{width:800px;}
 td.navigation{font-size:0.8em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-*/
-/* --- NAVBAR CONTAINER --- */
-.navbar {
-    background: #003366;        /* deep blue example */
-    color: white;
-    width: 100%;
-  }
-  
-  .nav-container {
-    max-width: 900px;
-    margin: auto;
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-  }
-  
-  /* --- LOGO / TITLE --- */
-  .nav-logo {
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 10px 0;
-  }
-  
-  /* --- MENU LIST --- */
-  .nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    padding: 8px 10px;
-    display: block;
-  }
-  
-  /* Hover effect (optional) */
-  .nav-menu li a:hover {
-    background: #005599;
-    border-radius: 4px;
-  }
-  
-  /* --- HAMBURGER ICON FOR MOBILE --- */
-  .nav-toggle {
-    display: none;  /* hide the checkbox */
-  }
-  
-  .nav-toggle-label {
-    display: none;
-    font-size: 1.8em;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  /* --- MOBILE STYLE --- */
-  @media (max-width: 700px) {
-  
-    .nav-menu {
-      display: none;             /* hide menu by default */
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background: #003366;
-      padding: 10px 0;
-      border-top: 1px solid #004080;
-    }
-  
-    /* Show menu when checkbox is checked */
-    .nav-toggle:checked ~ .nav-menu {
-      display: flex;
-    }
-  
-    .nav-toggle-label {
-      display: block;           /* show hamburger */
-    }
-  
-    .nav-logo {
-      padding: 10px 0;
-    }
-  }
 
 
+td.navigation {
+    font-size: 0.8em;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px 15px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+    td.navigation {
+        white-space: normal;   /* allow wrapping */
+        display: inline-block; /* items wrap naturally */
+        padding: 8px 10px;     /* slightly larger touch area */
+    }
+
+    table.navigation {
+        width: 100%;
+    }
+}
 /* Sponsor Images */
 table.sponsors{width:800px;}
 td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
