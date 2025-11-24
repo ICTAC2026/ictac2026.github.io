@@ -24,6 +24,8 @@
     vertical-align:baseline;
 }
 
+
+
 body{
     background-color: #fafafa;
     background-size: cover;
@@ -35,7 +37,9 @@ body{
     line-height:1.5em;
     margin: 60px auto;
     width: 1000px;
+    margin-left: 220px; /* space for the sidebar */
 }
+
 
 a{color: #b8860b; text-decoration:none;}
 a.current{color: #52739e;}
@@ -87,30 +91,44 @@ th,td{
 .year{color: #505050; font-size:0.67em; font-weight: lighter;}
 
 /* Navigation Links (Home, Registration, etc) */
+/*
 table.navigation{width:800px;}
-td.navigation{font-size:0.8em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.navigation{font-size:1.2em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+*/
 
+/* Vertical sidebar navigation */
+.side-nav { 
+    width: 200px;
+    padding: 10px;
+    background: #fafafa;
+    border-right: 1px solid #ccc;
 
-td.navigation {
-    font-size: 0.8em;
-    white-space: nowrap;
-    text-align: center;
-    vertical-align: middle;
-    padding: 4px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    position: fixed;   /* stays on the left while scrolling */
+    top: 165px;
+    left: 0;
+    height: 100vh;
+
+    overflow-y: auto;
 }
 
-/* MOBILE FIX */
-@media (max-width: 600px) {
-    td.navigation {
-        white-space: normal;   /* allow wrapping */
-        display: inline-block; /* items wrap naturally */
-        padding: 8px 10px;     /* slightly larger touch area */
-    }
-
-    table.navigation {
-        width: 100%;
-    }
+/* Links */
+.side-nav a {
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    font-size: 1.1em;
+    color: #333;
 }
+
+.side-nav a:hover,
+.side-nav a.current {
+    background: #ddd;
+}
+
 /* Sponsor Images */
 table.sponsors{width:800px;}
 td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
@@ -138,6 +156,58 @@ td.sponsor img{width: 100%}
 
 footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
+.sponsor-section {
+    text-align: left;
+    margin-left: 20px; /* adjust as needed */
+}
+
+.dates-section {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.dates-section h3 {
+    color: #52739e;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+}
+
+.dates-section p {
+    width: 800px;
+    /*margin: 6px auto 20px auto;*/
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+/* google maps placement */
+.map-container {
+    display: flex;
+    justify-content: flex-start; /* you can change to center if needed */
+    padding-left: 40px; /* adjusts horizontal shift */
+}
+
+/* style for committees */
+committee {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+/* Committee headings */
+.committee h3 {
+    margin-top: 0;
+    margin-left: 20px;
+    font-size: 1.5em;
+    color: #003366; /* Matches typical conference style */
+}
+
+
 /* My hacky way of making the site mobile-friendly */
 @media only screen and (max-width: 1100px) {
     h2{font-size:3.00em;}
@@ -147,4 +217,6 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
 }
+
+
 
