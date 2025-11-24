@@ -204,12 +204,12 @@ committee {
     margin: 25px 0;
     border-radius: 8px;
     max-width: 800px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 /* Committee headings */
 .committee h3 {
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: 20px;
     font-size: 1.5em;
     color: #003366; /* Matches typical conference style */
