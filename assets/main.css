@@ -214,6 +214,110 @@ committee {
     font-size: 1.5em;
     color: #003366; /* Matches typical conference style */
 }
+/* logo for boxes and sponsors */
+.logo-box{
+    width:120px;
+    height:80px;
+    background:
+            linear-gradient(45deg, #555 2px, transparent 2px),
+            linear-gradient(-45deg, #555 2px, transparent 2px),
+            #e2e8f0;
+    margin-left: 40px;
+    border-radius:8px
+}
+.tier-grid{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}
+.tier-box{
+    width:120px;
+    height:120px;
+    background:
+    #f1f5f9;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:20px}
+.tier-box.small{width:80px;height:80px;font-size:16px}
+
+.tier-box-platinum{
+    width:140px;
+    height:140px;
+    background:
+    #f1f5f9;
+    background-image: url("icons/sponsor-platinum.svg"); /* path to your icon */
+    opacity: 0.5;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    margin-left: 40px;
+    justify-content:center;
+    font-weight:700;
+    font-size:20px}
+
+
+.tier-box-gold{
+    width:120px;
+    height:120px;
+    background:
+    #f1f5f9;
+    background-image: url("icons/sponsor-gold.svg"); /* path to your icon */
+    opacity: 0.5;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    margin-left: 40px;
+    justify-content:center;
+    font-weight:700;
+    font-size:20px
+}
+
+.tier-box-silver{
+        width:100px;
+        height:100px;
+        background:
+        #f1f5f9;
+        background-image: url("icons/sponsor-silver.svg"); /* path to your icon */
+        opacity: 0.5;
+        border-radius:8px;
+        display:flex;
+        align-items:center;
+        margin-left: 40px;
+        justify-content:center;
+        font-weight:700;
+        font-size:20px
+}
+
+.tier-box-bronze{
+        width:80px;
+        height:80px;
+        background:
+        #f1f5f9;
+        background-image: url("icons/sponsor-bronze.svg"); /* path to your icon */
+        opacity: 0.5;
+        border-radius:8px;
+        display:flex;
+        align-items:center;
+        margin-left: 40px;
+        justify-content:center;
+        font-weight:700;
+        font-size:20px
+}
+
+.tier-box-school{
+    width:100px;
+    height:100px;
+    background:
+    #f1f5f9;
+    background-image: url("icons/sponsor-school.svg"); /* path to your icon */
+    opacity: 0.5;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    margin-left: 40px;
+    justify-content:center;
+    font-weight:700;
+    font-size:20px
+}        
 
 
 /* My hacky way of making the site mobile-friendly */
