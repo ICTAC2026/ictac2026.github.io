@@ -225,6 +225,18 @@ committee {
     margin-left: 40px;
     border-radius:8px
 }
+.logo-img {
+    width: 200px;
+    height: 140px;
+    object-fit: contain;   /* Keeps full logo visible */
+    background-color: white; /* Same background as before (optional) */
+    border-radius: 8px;
+    margin-left: 40px;
+    padding: 6px;          /* Optional: adds breathing room around the logo */
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+
+
 .tier-grid{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0}
 .tier-box{
     width:120px;
