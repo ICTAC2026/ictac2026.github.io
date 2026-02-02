@@ -80,8 +80,27 @@ th,td{
 
 /* Website Banner */
 .banner {position: relative; font-family:'Roboto Slab',serif;}
-.top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
-.bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
+.top-left {font-size:5.33em; 
+    color: #505050; 
+    background: #fafafa; 
+    text-align: center; 
+    width: 1000px;
+    height: 67px; 
+    position: absolute; 
+    padding: 36px 0 0 0; top: 0px;
+}
+.bottom-right {font-size:2.33em; 
+    color: #fafafa; 
+    line-height: 1.5em; 
+    width: auto; 
+    height: 100px; 
+    padding: 0px 27px 27px 0px; 
+    text-align: right; 
+    position: absolute; 
+    bottom: 0px; 
+    right: 0px; 
+    text-shadow: 0px 0px 6px #000000;
+}
 
 /* Conference Title Logo */
 .title1{color: #b2132e; text-shadow: 1px 1px 3px #c0c0c0;} 
@@ -331,6 +350,7 @@ committee {
 
 
 /* My hacky way of making the site mobile-friendly */
+/*
 @media only screen and (max-width: 1100px) {
     h2{font-size:3.00em;}
     p{font-size:1.5em; line-height:1.5em;}
@@ -339,13 +359,16 @@ committee {
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
 }
-
+*/
 /* side note with important dates */
+
+
 .dates-sidebar {
-    /*position: absolute;*/
+    position: fixed;
     display: block;
     /*right: 120px;  Adjust based on your layout width */
-    /*top: 300px;    /* Adjust based on where you want it to start */
+    top: 900px;    /* Adjust based on where you want it to start */
+    left: 5px;
     width: 180px;
     margin: 20px auto; /* Centers the logo on mobile */
     background: #fff;
@@ -356,15 +379,35 @@ committee {
     font-size: 0.9em;
 }
 
+@media (min-width: 1100px) {
+    .dates-sidebar {
+        position: fixed;
+        display: block;
+        /*right: 120px;  Adjust based on your layout width */
+        top: 150px;    /* Adjust based on where you want it to start */
+        left: 1250px;
+        width: 180px;
+        margin: 20px auto; /* Centers the logo on mobile */
+        background: #fff;
+        border: 1px solid #ddd;
+        border-left: 5px solid #b2132e; /* Red accent */
+        padding: 15px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        font-size: 0.9em;
+    }
+    }
+
 /* 2. Desktop Style (for screens wider than 1100px) */
+/*
 @media (min-width: 1100px) {
     .dates-sidebar {
       position: absolute;
-      right: 250px; /* Pushes it into the margin */
+      right: 250px; 
       top: 500px;
-      margin: 0;     /* Removes the mobile centering margin */
+      margin: 0;     
     }
   }
+*/
 
 .dates-sidebar h3 {
     margin-top: 0;
@@ -400,26 +443,35 @@ committee {
 
 /** entry for the springer logo */
 /* 1. Default Style (for Mobile/Small screens) */
+/*
 .inline-support {
     display: block;
     width: 180px;
-    margin: 20px auto; /* Centers the logo on mobile */
+    margin: 20px auto; 
     padding: 10px;
     border: 1px solid #ddd;
     text-align: center;
     box-sizing: border-box;
   }
   
+  */
   /* 2. Desktop Style (for screens wider than 1100px) */
-  @media (min-width: 1100px) {
     .inline-support {
-      position: absolute;
-      right: 290px; /* Pushes it into the margin */
-      top: 270px;
-      margin: 0;     /* Removes the mobile centering margin */
+      display: block;   /* Makes it visible */
+      position: fixed;  /* Locks it to the viewport */
+      /*right: 40px;       /* Distance from the left edge */
+      left: 5px;
+      top: 650px;       /* Distance from the top */
+      width: 180px;
+      display: block;      /* Ensures it is always visible */
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+      background-color: white; /* Prevents text behind it from showing through */
+      z-index: 1000;
     }
-  }
   
+
   .inline-support img {
     width: 100%;
     height: auto;
