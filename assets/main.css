@@ -527,7 +527,7 @@ committee {
       position: fixed;  /* Locks it to the viewport */
       /*right: 40px;       /* Distance from the left edge */
       left: 5px;
-      top: 610px;       /* Distance from the top */
+      top: 650px;       /* Distance from the top */
       width: 180px;
       display: block;      /* Ensures it is always visible */
       padding: 10px;
