@@ -20,7 +20,7 @@
             <span class="title1">ICTAC</span><span class="title2"></span> <span class="year">2026</span>
         </div>
         <div class="bottom-right">
-            (School&Symposium) November 9-13, 2026 <br>  Bariloche
+            (School&Colloquium) November 9-13, 2026 <br>  Bariloche
         </div>
     </div>
 
@@ -36,14 +36,18 @@
         <a href="../school" class="active">Postgraduate School</a>
         <a href="../workshops/" >Workshops</a>
     </nav>
-
-
+    <h4>We thank the following sponsors for their support of the school:</h4>
+        <div class="org-grid" style="display:flex;gap:16px;flex-wrap:wrap;margin:12px 0">
+            <a href="https://www2.sigsoft.org/" target="_blank">
+                <img class="logo-img" src="../assets/sigsoft.jpg" alt="Sigsoft">
+            </a>
+        </div>
     <h2> About PhD School </h2>
     <p  style="text-align: justify;">
-        The ICTAC Postgraduate School on Formal Methods for Building Mission-Critical Systems will be held at the NH Bariloche Edelweiss Hotel, Argentina, on November 9–10, 2026. It targets master’s and Ph.D. students, early-stage researchers, and lecturers in computer science and mathematics. The school offers specialized training in formal methodologies for developing critical software, particularly for the satellite, aerospace, automotive, and nuclear sectors. The program consists of tutorials (two 2-hour lectures) and short talks (1 hour) by leading experts in the area.
+        The ICTAC Postgraduate School on Formal Methods for Building Mission-Critical Systems will be held at the NH Bariloche Edelweiss Hotel, Argentina, on <strong> November 9–10, 2026 </strong>. It targets master’s and Ph.D. students, early-stage researchers, and lecturers in computer science and mathematics. The school offers specialized training in formal methodologies for developing critical software, particularly for the satellite, aerospace, automotive, and nuclear sectors. The program consists of tutorials (two 2-hour lectures) and short talks (1 hour) by leading experts in the area.
     </p>
 
-    <h2> Lecturers </h2>
+    <h2> Tutorials: </h2>
     <div class="speaker-container">
         <div class="speaker-card">
             <div class="speaker-img-container">
@@ -98,13 +102,54 @@
                 <h3 class="speaker-name">Dr. César Sanchez</h3>
                 <p class="speaker-affiliation"> IMDEA Software Institute </p>
                 <p class="speaker-bio">
-                    Cesar Sanchez is full (research) professor at the IMDEA Software Institute in Madrid, Spain. He holds a PhD from Stanford University in 2007. He was a postdoc at University of California Santa Cruz before joining the IMDEA Software Institute in 2008.  His current research focuses on applications of logic to computer science and in formal methods for reactive systems, and in particular temporal logics for hyperproperties and runtime verification. His main practical interests are applications of runtime verification to autonomous systems and blockchain and smart-contract reliability.    
+                    César Sánchez is a Full Professor at the IMDEA Software Institute in
+                    Madrid, Spain. He holds a Ph.D. in Computer Science from Stanford
+                    University (2007), where he worked under the supervision of Zohar
+                    Manna, and an M.S. in Computer Science also from Stanford (2001). He
+                    received his M.Eng. in Telecommunication Engineering from Universidad
+                    Politécnica de Madrid (1998). After a postdoctoral position at UC
+                    Santa Cruz, he joined IMDEA Software in 2008, where he was granted
+                    tenure in 2012 and promoted to Full Professor in 2023.  His research
+                    lies at the intersection of logic, automata theory, and game theory,
+                    with applications to the rigorous design, verification, and synthesis
+                    of software systems. His current research agenda focuses on reactive
+                    synthesis modulo theories, logics for hyperproperties, runtime
+                    verification, and formal methods for neurosymbolic computing. He is
+                    the author of over 130 publications at leading venues including CAV,
+                    AAAI, ATVA, TACAS, and LICS, and serves regularly on the program
+                    committees of major formal methods conferences.
                 </p>
                 <p class="speaker-talk"><strong>
-                    TBA
+                    Reactive Synthesis Modulo Theories
                 </strong> 
                 </p>
-                <p class="speaker-talk-description"><strong>
+                <p class="speaker-talk-description">
+                <strong>
+                    Reactive synthesis is the automated construction of correct-by-design
+                controllers from high-level temporal specifications. Classical
+                approaches based on Linear Temporal Logic (LTL) operate over Boolean
+                signals, leaving data and arithmetic outside the scope of the
+                specification language. This course presents a principled extension of
+                reactive synthesis to LTL modulo theories (LTL_T), a framework that
+                enriches LTL with literals from first-order theories—enabling
+                specifications that relate data values across time.  The course begins
+                with a self-contained introduction to LTL syntax and semantics,
+                automata-theoretic techniques, and Satisfiability Modulo Theories
+                (SMT), then introduces LTL_T as a natural unification of these
+                formalisms. We then revisit classical reactive synthesis for LTL,
+                covering two-player games and the automata-to-game pipeline, before
+                developing the analogous theory for LTL_T: realizability modulo
+                theories and controller synthesis via dynamic and static (functional
+                synthesis) approaches. The fourth lecture addresses full LTL modulo
+                theories, including CEGAR-based methods that achieve completeness. The
+                course closes with an excursion into neurosymbolic shielding—a
+                technique that wraps neural network policies with formally verified
+                safety guarantees derived from synthesis—connecting classical formal
+                methods with modern machine learning.  Attendees will gain both the
+                theoretical foundations and algorithmic tools needed to specify,
+                analyze, and synthesize reactive systems that manipulate data,
+                bridging the gap between symbolic formal methods and (neural)
+                data-aware computation.
                 </strong> 
                 </p>
             </div>
@@ -113,9 +158,35 @@
     <!--
     <iframe class="registration" src="EMBED LINK FOR GOOGLE FORM HERE"></iframe>
     -->
-    <h2> Tutorials </h2>
-    <p> Two 1-hour sessions led by distinguished experts.
-        Speakers and topics: To be announced.</p>
+    <h2> Talks: </h2>
+    <p> 
+        <div class="speaker-card">
+            <div class="speaker-img-container">
+                <img src="../assets/Hermanns.jpeg" alt="Dr. Holger Hermanns">
+            </div>
+            <div class="speaker-info">
+                <h3 class="speaker-name">Dr. Holger Hermanns</h3>
+                <p class="speaker-affiliation"> Saarland University </p>
+                <p class="speaker-bio">
+                    Holger Hermanns is a full professor in computer science at Saarland University in Germany, heading the Dependable Systems and Software group. From April 2004 to March 2006, Holger Hermanns has served as Dean of Studies of the Faculty of Mathematics and Computer Science, and has served as its Dean from April 2010 to March 2012. Afterwards he did his best to serve as Dean of Hearts. Holger Hermanns is elected member of Academia Europaea. In 2016 he got awarded an ERC Advanced Grant.
+                </p>
+                <p class="speaker-talk"><strong>
+                    TBA
+                </strong> 
+
+                </p>
+                <p class="speaker-talk-description">
+                <strong>
+                    TBA
+                </strong> 
+                </p>
+            </div>
+        </div>
+    </p>
+    <p style="font-family: sans-serif; color: #4b5563; font-style: italic; font-size: 15px; border-top: 1px dashed #cbd5e1; padding-top: 10px; margin-top: 20px;">
+        <span style="color: #2563eb; font-weight: bold; font-style: normal; margin-right: 5px;">•</span> 
+        More talks and schedule details to be confirmed soon.
+      </p>
 
     <footer>
         &copy; Conference Organizers
