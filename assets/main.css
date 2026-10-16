@@ -87,18 +87,40 @@ th,td{
 }
 
 /* Website Banner */
-.banner {position: relative; font-family:'Roboto Slab',serif;left: 20px;}
-.top-left {font-size:5.33em; 
+.banner {
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    /* Remove 'left: 20px;' if it's pushing the whole banner out of bounds. 
+       Instead, handle spacing on the parent container or use margin. */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.top-left {
+    font-size: 5.33em; 
     color: #505050; 
     background: #fafafa; 
     text-align: center; 
-    width: 1000px;
+    
+    /* Change from fixed width to responsive positioning */
+    width: auto;                  /* Lets it size based on content or padding */
+    left: 20px;                   /* Distance from the left of the banner */
+    right: 20px;                  /* Keeps it inside the right margin */
+    
     height: 67px; 
     position: absolute; 
     padding: 36px 0 0 0; 
     top: 0px;
+    box-sizing: border-box;
 }
-.bottom-right {font-size:2.33em; 
+.bottom-right {font-size:1.33em; 
     color: #fafafa; 
     line-height: 1.5em; 
     width: auto; 
